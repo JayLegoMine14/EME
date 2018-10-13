@@ -23,6 +23,10 @@ html, body, .body-content, #MasterCarousel, .carousel-inner, .carousel-item {
     background-color: #EEE0CB;
 }
 
+.eme-white-text {
+   color: #EEE0CB !important;
+}
+
 .eme-black {
     background-color: #02111B;
 }

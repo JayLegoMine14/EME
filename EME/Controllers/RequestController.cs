@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using EME.Objects;
+using EME.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
@@ -12,7 +14,7 @@ namespace EME.Controllers
     public class RequestController : Controller
     {
         [HttpPost]
-        public IActionResult Upload()
+        public object[] Upload()
         {
             var files = HttpContext.Request.Form.Files;
             List<String> paths = new List<String>();
@@ -29,12 +31,16 @@ namespace EME.Controllers
                 }
             }
 
-            JObject name = JObject.Parse(HttpContext.Request.Form["name"]);
-            string firstname = name["first"].ToString();
-            string middlename = name["middle"].ToString();
-            string lastname = name["last"].ToString();
+            User u = new User();
 
-            return Ok();
+            JObject name = JObject.Parse(HttpContext.Request.Form["name"]);
+            u.FirstName = name["first"].ToString();
+            u.MiddleName = name["middle"].ToString();
+            u.LastName = name["last"].ToString();
+
+            u.ImagePaths = paths;
+
+            return SearchService.PreformSearch(u);
         }
     }
 }
