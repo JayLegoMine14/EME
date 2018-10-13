@@ -40,8 +40,10 @@ namespace EME
             }
 
             app.UseStaticFiles();
-
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Request}/{action=Upload}");
+            });
         }
     }
 }

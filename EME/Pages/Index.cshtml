@@ -1,108 +1,77 @@
 ﻿@page
+@Html.AntiForgeryToken()
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+<div id="MasterCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="position-absolute text-center absolute-center" style="top:7%;height:170px;width:auto" src="~/images/logo.png">
+            <h5 class="position-absolute text-center absolute-center eme-black-text" style="width:100%;top:33%;">investigate your social media and online presence</h5>
+            <div class="card text-center position-absolute absolute-center" style="top:42%;width: 40rem;">
+                <div class="card-body eme-white">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" id="FirstName" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="MiddleName" class="form-control" placeholder="Middle names">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="LastName" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row mt-2 w-100" style="margin: 0;">
+                        <div id="Photos" class="dropzone w-100"></div>
+                    </div>
+                    <br />
+                    <button id="FindMe" type="submit" class="btn btn-dark btn-lg">Find Me</button>
+                </div>
             </div>
+            <div id="particles-js" class="eme-red" style="width:100%;height:100%;"></div>
         </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+        <div class="carousel-item">
+
         </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+        <div class="carousel-item">
+
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core Razor Pages</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?linkid=852130">Working with Razor Pages.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure App Service</a></li>
-        </ul>
-    </div>
-</div>
+<script>
+    particlesJS("particles-js", { "particles": { "number": { "value": 183, "density": { "enable": true, "value_area": 1042.21783956259 } }, "color": { "value": "#EEE0CB" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 3 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.1683582663908799, "random": false, "anim": { "enable": false, "speed": 0.7, "opacity_min": 0.1, "sync": false } }, "size": { "value": 12.02559045649142, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 112.2388442605866, "color": "EEE0CB", "opacity": 0.4, "width": 2.0844356791251797 }, "move": { "enable": true, "speed": 4, "direction": "top-right", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": true, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 207.079689136843, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    var imageUpload;
+
+    Dropzone.autoDiscover = false;
+    imageUpload = new Dropzone("div#Photos", {
+        paramName: "file",
+        resizeWidth: 1000,
+        url: "/Request/Upload",
+        acceptedFiles: "image/*",
+        withCredentials: true,
+        autoProcessQueue: false,
+        parallelUploads: 5,
+        maxFiles: 5,
+        uploadMultiple: true,
+        dictDefaultMessage: "Drop or click to upload images to help us find you",
+        headers: {
+            'XSRF-TOKEN': $('input:hidden[name="__RequestVerificationToken"]').val()
+        },
+        params: function () {
+            return {
+                "name": JSON.stringify({
+                    first: $("#FirstName").val(),
+                    middle: $("#MiddleName").val(),
+                    last: $("#LastName").val()
+                })
+            }
+        }
+    });
+
+    $("#FindMe").click(function () {
+        imageUpload.processQueue();
+    });
+</script>
