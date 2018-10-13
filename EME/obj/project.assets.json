@@ -5936,11 +5936,10 @@
       ]
     },
     "Microsoft.AspNetCore.JsonPatch/2.0.0": {
-      "sha512": "TTegmLlmfFvCJ/7QRCMWswfmB17DmBS5Z/ahkGW9RihQPvjmW/3FpckVUJSn0D8chbGfM7PUCCXfEYlsKFDF0A==",
+      "sha512": "US78cfi7nrPTXeONgcSWbgrUBLs1Aca4kCJTieWXDLg0G0gwmdfPbd6S3c5TdJRQdA69K3UhPAs9r9ZAMjIFAA==",
       "type": "package",
       "path": "microsoft.aspnetcore.jsonpatch/2.0.0",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
         "microsoft.aspnetcore.jsonpatch.2.0.0.nupkg.sha512",
@@ -6749,21 +6748,19 @@
       ]
     },
     "Microsoft.Data.Sqlite/2.0.1": {
-      "sha512": "bUVc4fdknlFYUnEgljI13lr23YaOXO9GEw0Oo6ay8cWijUA/3raWVTNHdRIASF14RFcJ0RaWgLyRGxo7w2qF0Q==",
+      "sha512": "jJXCZniFDwHGnRYd9WD3vswQCyIXk0/gsne9TLFWIpy6oK4kAcKD1BTncaHQmVg0pp/YmRBKXVIh4yXSHqbsGQ==",
       "type": "package",
       "path": "microsoft.data.sqlite/2.0.1",
       "files": [
-        ".signature.p7s",
         "microsoft.data.sqlite.2.0.1.nupkg.sha512",
         "microsoft.data.sqlite.nuspec"
       ]
     },
     "Microsoft.Data.Sqlite.Core/2.0.1": {
-      "sha512": "Vubn0Y9RVl82mLoL+8gA7lrbuxdA2+cJmFxfwc56bnujLtTbdcZ8Ay1k+1mGpdZ4IjUKP06IBhXaa071owXStA==",
+      "sha512": "lkUOJRJEXnXAxWKhCSFjYKLhuopw+m6ClML4cF1Rt/Ek8bBUW6hn1xAHCZ9KFqkcNOpBS7rQ6nZBaSXU3mgbOQ==",
       "type": "package",
       "path": "microsoft.data.sqlite.core/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
         "microsoft.data.sqlite.core.2.0.1.nupkg.sha512",
@@ -7073,11 +7070,10 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/2.0.0": {
-      "sha512": "V6xeuEEpIIygDHtOtJ+0X0qkKtVSUS1+kwOC3O4pH0depJf8AfofGo8hanOxoRgooj7WmTtPcgOIjwAteEe28A==",
+      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/2.0.0",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
@@ -7085,11 +7081,10 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "P4dK3DZQFsp7fFzkBu9H9jesBj0KB3O9c50n9FeAOIF+A8aQKBRj63luC9gPqvcedNdMfYQoEUe5dLps1sqvuA==",
+      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
@@ -7111,11 +7106,10 @@
       ]
     },
     "Microsoft.Extensions.DiagnosticAdapter/2.0.1": {
-      "sha512": "7HO5TlPQMqMoIYRZ0gQDkqi97FCZEHsSXzFIWlrHG2faOfZorN6syEmdMq/lHYBAisPfhdz1eGkhuOzmCuZKMw==",
+      "sha512": "w8nux+yppIAD3ouzLz3CEtUMj03WIQ9FAmuR6IhrCpQDcoMtajlZIkZLbryJE1jdF1wkewLLM2LpXasfu7HzQw==",
       "type": "package",
       "path": "microsoft.extensions.diagnosticadapter/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/net461/Microsoft.Extensions.DiagnosticAdapter.dll",
         "lib/net461/Microsoft.Extensions.DiagnosticAdapter.xml",
         "lib/netcoreapp2.0/Microsoft.Extensions.DiagnosticAdapter.dll",
@@ -7125,11 +7119,10 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/2.0.1": {
-      "sha512": "X3qVOCDZmj1mQnN2SfFUZZ3qfA4OPmD6XxxZpx43g/OKYvf3RI9tvVUsNECVMHEW7PjYfH83wNpqn6fThFAD0g==",
+      "sha512": "Gzc5yXvwIrKpdti0Ev4jC0inVrGZpI86eLZorMVRqAPXowR8JDRbcHjhmID2EqA4rdhL/IsfD42+4upKpHULDw==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.abstractions/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
         "microsoft.extensions.fileproviders.abstractions.2.0.1.nupkg.sha512",
@@ -7137,11 +7130,10 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Composite/2.0.1": {
-      "sha512": "XQgLy2EJhQwFtWFEaxidEFH5CG6UpJksUumAZFH1/DySRFyVqoUY6fExCqMNRwFUZMio6tr2eYvQGVYoNTKhGg==",
+      "sha512": "bgAUXH3T/Y1R5bCthCiZVzEX4spvNeIHRv6+Jr4BJMxPVSFm/8er7xvywd2NCayv94frKZdDGP3mjAQZenZDxQ==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.composite/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Composite.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Composite.xml",
         "microsoft.extensions.fileproviders.composite.2.0.1.nupkg.sha512",
@@ -7149,11 +7141,10 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Embedded/2.0.1": {
-      "sha512": "dupuUHdRuZCtSAAacLzhblRz4qHUh4PXI4hDZq7sj0KteHjyJTjcEYmKocxXexr18d2OuuYRqt57NChldouLzQ==",
+      "sha512": "PH1oo04WCbKy42aga6bC4phl1rZfbFsZLuozJN1LGUUZTCnycUAZzCqG6MNRCgRiHg2bPexiQ15708vSwnuBHQ==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.embedded/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
         "microsoft.extensions.fileproviders.embedded.2.0.1.nupkg.sha512",
@@ -7161,11 +7152,10 @@
       ]
     },
     "Microsoft.Extensions.FileProviders.Physical/2.0.1": {
-      "sha512": "jPqutmmCQ0SQwX6f9VYg4n/Lgah056GgfeIGoY/9G5jQDDe9Kz2q2T3lc75rNyPKG2pej3sTz+dX1uI+l2vSVA==",
+      "sha512": "h+6bcXYlGldl7BUhnQKFxL2sMfeg9Gr/AuVexYOCYWmzDsc4iyUoy3NL7i2vkG209wd0ZXf+pZzRDwGPFhmlSw==",
       "type": "package",
       "path": "microsoft.extensions.fileproviders.physical/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
         "microsoft.extensions.fileproviders.physical.2.0.1.nupkg.sha512",
@@ -7173,11 +7163,10 @@
       ]
     },
     "Microsoft.Extensions.FileSystemGlobbing/2.0.1": {
-      "sha512": "+Es2DplDfGchyuZ/IgSzLkL8FSsLn9u1lJdrP9GwAP8FyAIIQg6e7xg4BZYLq3DDi+X6+iJrkmSU8ZzOyhZQqQ==",
+      "sha512": "q7KsG2kjwo2Ps0WdV7MFh64cQS0UHikV8qv4HQrUfWQyxim5vNmLzAbuduarS9QWbhRHTtUanx+ohyAQdumdnw==",
       "type": "package",
       "path": "microsoft.extensions.filesystemglobbing/2.0.1",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
         "microsoft.extensions.filesystemglobbing.2.0.1.nupkg.sha512",
@@ -7341,11 +7330,10 @@
       ]
     },
     "Microsoft.Extensions.ObjectPool/2.0.0": {
-      "sha512": "u/vJNHsHilIr3bNOdnzjvlaHFTP4JacRzJLoqu3o5kl8Cxs1HrSLJ1Hv9o3ZXCwVgwkFLRFKF0a5+RDZhNExZQ==",
+      "sha512": "drOmgNZCJiNEqFM/TvyqwtogS8wqoWGQCW5KB/CVGKL6VXHw8OOMdaHyspp8HPstP9UDnrnuq+8eaCaAcQg6tA==",
       "type": "package",
       "path": "microsoft.extensions.objectpool/2.0.0",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
         "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
         "microsoft.extensions.objectpool.2.0.0.nupkg.sha512",
@@ -7390,11 +7378,10 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.0.0": {
-      "sha512": "AMyFwlYdEY4GjjCFGQhUr1/0ZZyYyNjjpCx8Vwfy+Ylxv8pn649uaX5J2L7aknEtQY5+XA+TSfxRSBCgy68yvQ==",
+      "sha512": "ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.0.0",
       "files": [
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
         "microsoft.extensions.primitives.2.0.0.nupkg.sha512",
@@ -8096,10 +8083,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.0.3": {
-      "sha512": "52tNEfLXZtB82T9Tahr6w35HNhneDCpeXvY7sFGP3hBifynZ/dKev+PQvr6VX8jMXUuWlbx/19r03SPvyZwFrA==",
+      "sha512": "5x4iBuePKwa3LFdyPXotF5si2S/aQbg0nTpLAY4OwBm4bYukyZ1MqEvJzk7QBrBQgAU5B2w5WWeWAZu97c2+sQ==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration/2.0.3",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.xml",
         "microsoft.visualstudio.web.codegeneration.2.0.3.nupkg.sha512",
@@ -8107,10 +8095,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.0.3": {
-      "sha512": "RC6h5TLOhRji+Ei1rEQkew254pgl3CDkv7kS9g99WXin/baxFCJvJ60kx0mP0+BImhWy2slhb1lRzzNBOXDAng==",
+      "sha512": "Drhtw/EHyL7Uw6jdbv1PWN2dpZuW53H5B2bDW7T4DmBmIGKaNMsBALQIJRtU269ZyfaVy9RpU+kKQkm+PCAnog==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.0.3",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.xml",
         "microsoft.visualstudio.web.codegeneration.contracts.2.0.3.nupkg.sha512",
@@ -8118,10 +8107,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.0.3": {
-      "sha512": "j6M7elWp16R/ck24UbxiRYrDavWFJflseIhjtpPtwXYINtwCJtjVtIHm+PZIzLxg0hwTFFBFm26wopDjGfGq0w==",
+      "sha512": "sI26eFsO1788EJuiIlzsZoVKiEOddX3+lna1IxQ9zxwDs5L2jIFzDBWQPEQFvqDDnryOO5EWfDfqUattvb9ocw==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.core/2.0.3",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.xml",
         "microsoft.visualstudio.web.codegeneration.core.2.0.3.nupkg.sha512",
@@ -8129,10 +8119,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.0.3": {
-      "sha512": "YlSBXfB3L3ucHa8BqfzOFOSNTvW308pSNkKBvEswSXRv7bHzl2O33KKmXUSkDqaJvFrU9rYKQY52iTSmAJWlMA==",
+      "sha512": "XAD9F7tecb4laosO5BdZ9i4JIqtAp6UBvxpzkEjk63X6i2Vgt0hRptf7jXp/VBcV+2a4Jted/tc2Vhsegon3XA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.design/2.0.3",
       "files": [
+        ".signature.p7s",
         "lib/net461/dotnet-aspnet-codegenerator-design.exe",
         "lib/net461/dotnet-aspnet-codegenerator-design.xml",
         "lib/netcoreapp2.0/dotnet-aspnet-codegenerator-design.dll",
@@ -8150,10 +8141,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.0.3": {
-      "sha512": "1ZNc1uqCAv1bU018kJXPOkpv8kKQmncjGwiBndHcJUHQ7xihq5Qd4pFJjWet4i4+mTPX0Bore5fbLa8qA1idyA==",
+      "sha512": "z0iVgV2O3ShCoGIY1yvrs91ISssxTPpPPh8LOWx87p1sg64lEwFHyKYV1H9moaQctTmAjZi77Ko1hBQ/mGVWSg==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.0.3",
       "files": [
+        ".signature.p7s",
         "Templates/DbContext/NewLocalDbContext.cshtml",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.xml",
@@ -8162,10 +8154,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.0.3": {
-      "sha512": "anV+hbYvJtSe1aCwqhNo/0b0M7+njZpPG/dx5pdHL6Qds8PoBi9FH+QpF9IxvWmdfgffbPwqpGH3J9Ag8JPGrg==",
+      "sha512": "7f1ySFOvc3xXX9hnsDX11EH5kvu3HX5+42FIhZ7odvrmovsiFVWW9yrszcoG80S7pttQRH7PkLfuaSke35eTuw==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.templating/2.0.3",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml",
         "microsoft.visualstudio.web.codegeneration.templating.2.0.3.nupkg.sha512",
@@ -8173,10 +8166,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.0.3": {
-      "sha512": "oaxS4I8mmHIsIN+FsP5XjbGEQHA2DQjzn4uHt8akJY9MlcnbPD71ta5Qez4vF6PuitKljnPFLsPTSJpXESOSXQ==",
+      "sha512": "dwBpCJ0WKxyVWMzVu/Q7P7dOMetCNYvB+5gMyvsT/69Dx9slYcmJFOSr6vVslfI7ZLZUov+PvJeii8EhDaF7TA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.utils/2.0.3",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll",
         "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml",
         "microsoft.visualstudio.web.codegeneration.utils.2.0.3.nupkg.sha512",
@@ -8184,10 +8178,11 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.0.3": {
-      "sha512": "WhYNqXJQqJRUt3XaLAUsKJkZcaAWECbSQ+UBqfGFCYDdAtyUS5L361x8lleQFpan4mu6VN/Ispc3CNu24wVu+w==",
+      "sha512": "YJ2YGjs/xqR2uKUMHdrSA0MTkVO/k+q6azfg+syjbx3Zm7wPfcaCh/Ld5+DkgTQjpjfgVL2eKlOTnC1DZspsTA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.0.3",
       "files": [
+        ".signature.p7s",
         "Generators/ParameterDefinitions/area.json",
         "Generators/ParameterDefinitions/controller.json",
         "Generators/ParameterDefinitions/razorpage.json",
@@ -9737,11 +9732,10 @@
       ]
     },
     "System.Diagnostics.DiagnosticSource/4.4.1": {
-      "sha512": "HpRPX7MklDJFmQa62J8YCE6ErlWbxuIYypvaH7H4LVWgbd8s0UcfMs6E6BQns1VfWdgXgS7gjGC24v8agyEvOg==",
+      "sha512": "U/KcC19fyLsPN1GLmeU2zQq15MMVcPwMOYPADVo1+WIoJpvMHxrzvl+BLLZwTEZSneGwaPFZ0aWr0nJ7B7LSdA==",
       "type": "package",
       "path": "system.diagnostics.diagnosticsource/4.4.1",
       "files": [
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net45/System.Diagnostics.DiagnosticSource.dll",
@@ -12432,11 +12426,10 @@
       ]
     },
     "System.Security.Cryptography.Xml/4.4.0": {
-      "sha512": "u3W6J9Da+k7c8TKKKTE6ddyZxyDbRraOtt2+mfMDyJvuLvV1njx4f5Van3us/65Au9THPDM21jl/6Vvj7sxbJQ==",
+      "sha512": "1Xubvo4i+K+DO6YzVh6vBKmCl5xx/cAoiJEze6VQ+XwVQU25KQC9pPrmniz2EbbJnmoQ5Rm2FFjHsfQAi0Rs+Q==",
       "type": "package",
       "path": "system.security.cryptography.xml/4.4.0",
       "files": [
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.Security.Cryptography.Xml.dll",
