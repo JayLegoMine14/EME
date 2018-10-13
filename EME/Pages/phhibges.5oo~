@@ -1,0 +1,248 @@
+﻿@page
+@Html.AntiForgeryToken()
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="MasterCarousel" class="carousel slide" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img class="position-absolute text-center absolute-center" style="top:7%;height:170px;width:auto" src="~/images/logo.png">
+            <h5 class="position-absolute text-center absolute-center eme-black-text" style="width:100%;top:33%;">investigate your social media and online presence</h5>
+            <div class="card text-center position-absolute absolute-center" style="top:42%;width: 40rem;">
+                <div class="card-body eme-white">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" id="FirstName" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="MiddleName" class="form-control" placeholder="Middle names">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="LastName" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row mt-2 w-100" style="margin: 0;">
+                        <div id="Photos" class="dropzone w-100"></div>
+                    </div>
+                    <br />
+                    <button id="FindMe" type="submit" class="btn btn-dark btn-lg">Find Me</button>
+                </div>
+            </div>
+            <div id="particles-js" class="eme-red" style="width:100%;height:100%;"></div>
+        </div>
+        <div class="carousel-item eme-red">
+            <img class="position-absolute text-center absolute-center" style="top:30%;width:150px;height:auto" src="~/images/Ripple-0.8s-200px.gif">
+            <h4 class="position-absolute text-center absolute-center eme-white-text" style="width:100%;top:55%;">
+                <span id="content-1">Scouring the wide web...</span>
+                <span id="content-2">Finding interesting stuff...</span>
+                <span id="content-3">Incentivising the coder monkies...</span>
+                <span id="content-4">Hmmm...</span>
+            </h4>
+        </div>
+        <div class="carousel-item eme-red active" style="overflow-y: auto">
+            <div id="Results" class="card-columns p-3" style="padding-bottom: 300px">
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <div class="card-body">
+                        <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                        <h6 class="card-title">Content from: <a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: <span class="text-success">Mostly Positive</span></small></p>
+                    </div>
+                    <div class="card-img-overlay">
+                        <span class="float-right"><i class="fas fa-lg fa-arrow-up text-success"></i></span>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" >
+                    <img class="card-img-top" src="https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title"><a href="www.google.com">Google</a></h6>
+                        <p class="card-text">Some content.</p>
+                        <p class="card-text"><small class="text-muted">Sentiment: Mostly Positive</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    AOS.init();
+    $(".carousel-item").on("scroll", function () {
+        AOS.refresh();
+    });
+    particlesJS("particles-js", { "particles": { "number": { "value": 183, "density": { "enable": true, "value_area": 1042.21783956259 } }, "color": { "value": "#EEE0CB" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 3 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.1683582663908799, "random": false, "anim": { "enable": false, "speed": 0.7, "opacity_min": 0.1, "sync": false } }, "size": { "value": 12.02559045649142, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 112.2388442605866, "color": "EEE0CB", "opacity": 0.4, "width": 2.0844356791251797 }, "move": { "enable": true, "speed": 4, "direction": "top-right", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": true, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 207.079689136843, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    var imageUpload;
+
+    Dropzone.autoDiscover = false;
+    imageUpload = new Dropzone("div#Photos", {
+        paramName: "file",
+        resizeWidth: 1000,
+        url: "/Request/Upload",
+        acceptedFiles: "image/*",
+        withCredentials: true,
+        autoProcessQueue: false,
+        parallelUploads: 5,
+        maxFiles: 5,
+        uploadMultiple: true,
+        dictDefaultMessage: "Drop or click to upload images to help us find you",
+        headers: {
+            'XSRF-TOKEN': $('input:hidden[name="__RequestVerificationToken"]').val()
+        },
+        params: function () {
+            return {
+                "name": JSON.stringify({
+                    first: $("#FirstName").val(),
+                    middle: $("#MiddleName").val(),
+                    last: $("#LastName").val()
+                })
+            }
+        },
+        success: function (file, response) {
+            //$("#MasterCarousel").carousel('next');
+            var r = response;
+
+            var total = 50;
+
+            var images = r[0];
+            var pars = r[1];
+
+            var col1 = [];
+            var col2 = [];
+            var col3 = [];
+            var currentColumn = 1;
+
+            while (col1.length + col2.length + col3.length < total) {
+                if (pars.length > 0) {
+                    var end = Math.floor(Math.Random() * 3);
+                    for (var i = 0; i <= end; i++)
+                    {
+                        if (currentColumn == 1) col1.push(pars.pop());
+                        if (currentColumn == 2) col2.push(pars.pop());
+                        if (currentColumn == 3) col3.push(pars.pop());
+                        currentColumn++;
+                        if (currentColumn == 4) currentColumnn = 1;
+                    }
+                }
+                if (images.length > 0) {
+                    var end = Math.floor(Math.Random() * 3);
+                    for (var i = 0; i <= end; i++) {
+                        if (currentColumn == 1) col1.push(images.pop());
+                        if (currentColumn == 2) col2.push(images.pop());
+                        if (currentColumn == 3) col3.push(images.pop());
+                        currentColumn++;
+                        if (currentColumn == 4) currentColumnn = 1;
+                    }
+                }
+            }
+
+            col2 = col1.concat(col3);
+            col1 = col1.concat(col2);
+
+            col1.forEach(function (i, item) {
+                var card = "";
+
+                card += '<div class="card" data-aos="fade-up">';
+                card += '    <div class="card-body">';
+                if(item["ImageUrl"] != null)
+                    card += '        <img class="card-img-top" src="' + item.ImageUrl + '">';
+                card += '            <h6 class="card-title">Content from: <a href="www.google.com">Google</a></h6>';
+                card += '            <p class="card-text">Some content.</p>';
+                card += '            <p class="card-text"><small class="text-muted">Sentiment: <span class="text-success">Mostly Positive</span></small></p>';
+                card += '    </div>';
+                card += '    <div class="card-img-overlay">';
+                card += '       <span class="float-right"><i class="fas fa-lg fa-arrow-up text-success"></i></span>';
+                card += '   </div>';
+                card += '</div>';
+
+            });
+        }
+    });
+
+    var divs = $('span[id^="content-"]').hide(), i = 0;
+
+    (function cycle() {
+
+        divs.eq(i).fadeIn(400)
+            .delay(4000)
+            .fadeOut(400, cycle);
+
+        i = ++i % divs.length;
+    })();
+
+    $("#FindMe").click(function () {
+        $("#MasterCarousel").carousel('next');
+        imageUpload.processQueue();
+    });
+</script>

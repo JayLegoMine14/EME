@@ -9,3 +9,16 @@ C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.Assembly
 C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfo.cs
 C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.dll
 C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
+C:\Users\truss_000\Desktop\workspace\EME\EME\bin\Debug\netcoreapp2.0\EME.deps.json
+C:\Users\truss_000\Desktop\workspace\EME\EME\bin\Debug\netcoreapp2.0\EME.runtimeconfig.json
+C:\Users\truss_000\Desktop\workspace\EME\EME\bin\Debug\netcoreapp2.0\EME.runtimeconfig.dev.json
+C:\Users\truss_000\Desktop\workspace\EME\EME\bin\Debug\netcoreapp2.0\EME.dll
+C:\Users\truss_000\Desktop\workspace\EME\EME\bin\Debug\netcoreapp2.0\EME.pdb
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.csprojAssemblyReference.cache
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.CoreCompileInputs.cache
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfoInputs.cache
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfo.cs
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.dll
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.Resource.resources
+C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.GenerateResource.cache

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using EME.Objects;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,6 +18,16 @@ namespace EME.Services
         {
             public String jsonResult;
             public Dictionary<String, String> relevantHeaders;
+        }
+
+        public static Dictionary<Name, List<String>> Search(List<Name> names)
+        {
+            Dictionary<Name, List<String>> rtnNames = new Dictionary<Name, List<String>>();
+            foreach (Name name in names)
+            {
+                rtnNames.Add(name, GetURLs(name.Value));
+            }
+            return rtnNames;
         }
 
         public static List<String> GetURLs(string searchTerm)
