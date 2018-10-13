@@ -1,0 +1,11 @@
+C:\Users\James Allison\source\repos\EME\EME\bin\Debug\netcoreapp2.0\EME.deps.json
+C:\Users\James Allison\source\repos\EME\EME\bin\Debug\netcoreapp2.0\EME.runtimeconfig.json
+C:\Users\James Allison\source\repos\EME\EME\bin\Debug\netcoreapp2.0\EME.runtimeconfig.dev.json
+C:\Users\James Allison\source\repos\EME\EME\bin\Debug\netcoreapp2.0\EME.dll
+C:\Users\James Allison\source\repos\EME\EME\bin\Debug\netcoreapp2.0\EME.pdb
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.csprojResolveAssemblyReference.cache
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.CoreCompileInputs.cache
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfoInputs.cache
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfo.cs
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.dll
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
