@@ -12,17 +12,21 @@ namespace EME.Services
         {
             Dictionary<Name, List<string>> urls = BingService.Search(user.GetNames());
 
-            List<Image> testImages = new List<Image>();
-            testImages.Add(TestService.GetTestImage());
-            testImages.Add(TestService.GetTestImage());
-            testImages.Add(TestService.GetTestImage());
+            List<Image> testImages = new List<Image>
+            {
+                TestService.GetTestImage(),
+                TestService.GetTestImage(),
+                TestService.GetTestImage()
+            };
 
-            List<Paragraph> testPars = new List<Paragraph>();
-            testPars.Add(TestService.GetTestParagraph());
-            testPars.Add(TestService.GetTestParagraph());
-            testPars.Add(TestService.GetTestParagraph());
+            List<Paragraph> testPars = new List<Paragraph>
+            {
+                TestService.GetTestParagraph(),
+                TestService.GetTestParagraph(),
+                TestService.GetTestParagraph()
+            };
 
-            object[] scrapeResult = new object[] { testImages, testPars };
+            object[] scrapeResult = ScrapeServices.Scrape(urls);
 
             scrapeResult[0] = (scrapeResult[0] as List<Image>).OrderByDescending(i => i.Confidence);
             scrapeResult[1] = (scrapeResult[1] as List<Paragraph>).OrderByDescending(i => i.Confidence);
