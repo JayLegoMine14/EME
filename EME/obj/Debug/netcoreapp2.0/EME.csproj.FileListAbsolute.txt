@@ -9,3 +9,14 @@ C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.Assembly
 C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfo.cs
 C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.dll
 C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
+D:\Workspaces\TigerHacks2018\EME\EME\bin\Debug\netcoreapp2.0\EME.deps.json
+D:\Workspaces\TigerHacks2018\EME\EME\bin\Debug\netcoreapp2.0\EME.runtimeconfig.json
+D:\Workspaces\TigerHacks2018\EME\EME\bin\Debug\netcoreapp2.0\EME.runtimeconfig.dev.json
+D:\Workspaces\TigerHacks2018\EME\EME\bin\Debug\netcoreapp2.0\EME.dll
+D:\Workspaces\TigerHacks2018\EME\EME\bin\Debug\netcoreapp2.0\EME.pdb
+D:\Workspaces\TigerHacks2018\EME\EME\obj\Debug\netcoreapp2.0\EME.csprojAssemblyReference.cache
+D:\Workspaces\TigerHacks2018\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.CoreCompileInputs.cache
+D:\Workspaces\TigerHacks2018\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfoInputs.cache
+D:\Workspaces\TigerHacks2018\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfo.cs
+D:\Workspaces\TigerHacks2018\EME\EME\obj\Debug\netcoreapp2.0\EME.dll
+D:\Workspaces\TigerHacks2018\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
