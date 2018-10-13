@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tigerhacks2018em-1539397752213",
+  "private_key_id": "1781eb37e0427629c7ce9ffa81848c198cacb007",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4CLimgaKhAFiM\nCLT5p0C98R8n2gE/uUv79lw4Ptsj7KO+1iIMZPIW5aT4XQHIA8HmottdCAfvB14Q\ncMJHrfUSGS9E1I5LzHTdcMieV+XdvQlw22VxnWAMybBdg+JIjxQ82NJlM8Xjgqj9\nTMcDP+2+fQzmONlcindQAtGkYXYFYB/6yNpR9KNE8uK1KCPQKlmIrpjabcQL/wSN\noEjzCy7MEtS32RnUwhNbj3LxZI8z43l3A7LS9dRQ68oGDS4P08sg58+WL4TT7xjm\ng4RncGB3vymzl4IvEdIMJVmxYitXzYCJnybRn3ssR77zz/selxd19bRi8gCd/8yW\nm7XxdDDNAgMBAAECggEACf60mJvIdgS2H7+GpLByvF4mGlylXg1K6n+czpPgrvjL\n2TIkCJb1lvdt7Zc6NjS4s9/7GKMLsJhZLCdo8HUALwrIcxfgNTmrdy4IQfagI1oq\n8xgspZkDKG6jx3sW2millBBqjNiHp4LnI//8JwRdKHqo2AVqY15Ee0dL6ijo51ho\nml2lZkOAEo4Q9lmUyjVGwI1nf9HLhTzZz+mCtHqeHatOpWUIX7L0xNVKx/p79lTx\n/6gxTyHK59a6gF0tZhfEzsK6k4GWA4u3+X7Etcgc+GJs6I4S693CoUQMdcKLWr+9\n31kv2VZLReBwIbEhUfcqqWr0Tpe+5Uo3Y7fYUk0xQQKBgQD+NLqlXase09Ske4zz\n52+sqV5JLTaLLxLeMKe9tKI4uWSM8Sv+SH63+QjPrEdKKfkYY6qx5qIONJrJ0LrT\nO3wiWhgp2jmhq4/oJ9ZOSHpgAJzu2XO933vc21CaGKyPmeRi6DtwX4Xf9AAiGgRr\nHZ9E9cgKr7QV4BRSXSUVF4gNxQKBgQC5VTalEMzTXK6OdjkAW9mhFtPU71cblnVm\ngxdUrbNV2sQGzXXKgmLHJDxYL6+dTVzPUKknI6EQpmNXQM38CenW0UwfdcBc3e0b\nLSVPHFxFYVxAS7VUczX53Si6GJz6cbBMo1PBY2rWCoJZhVyt8OsFz+W2Dj7RHEyr\nVDnfv/gPaQKBgBDqX1Urs3xcqjS7x/he+S5rIswJxyxh2IaShEb6YyUVKRy726qT\nFmOVncF7/E5yFpJJ54zpBPWfCIHPcu8lcTA0AJGgZN9eNDhFllwlNId44vh93dbP\nrUVYDrgCVlFD80+llnb21Ei/ytZ6FrsuAHAtTr9vS7N88r08V4BczX/lAoGABEab\nBCPnFdlFjbPcjM2Rr82/BWKgN9q4yqyrlSCMyqZJb36+APYRIVcMrVwsSQzH32CV\nBnoj9SZhlFnCZtYztukNQIyO65WTKtVXzwNwfYlJf5I/lLszu5gGoISA2qZU0u/R\nttx8UoPbjgUtpjWwtmmdex3JBToJ6sn+q9LZ/kECgYEAw2VXa6jRA8y5GxFoRGUl\nruUifmTLJEmPh8goWYnamC4FCcoIvF53V3OTc1bBzU+9iBQi5rLKa0nyiK80CMuI\n2/dqDajbCQjwNOSLGuvlBa7jepX0iDVOkdkd4tMEHA20j/A8082hASW7mW36dHH+\nc4r6L1dJKlLR5yg7XHBOERA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-19x9svgcrfmw@tigerhacks2018em-1539397752213.iam.gserviceaccount.com",
+  "client_id": "115476482070880329705",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-19x9svgcrfmw%40tigerhacks2018em-1539397752213.iam.gserviceaccount.com"
+}
