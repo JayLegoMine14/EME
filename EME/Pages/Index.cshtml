@@ -150,7 +150,7 @@
                 card += '    <div class="card-body">';
                 card += '            <h6 class="card-title">Content from: <a href="' + item.webpage.url + '">' + item.webpage.title + '</a></h6>';
                 if (item["text"] != null) {
-                    card += '            <p class="card-text">"' + item.text + '"</p>';
+                    card += '            <p class="card-text">"' + item.text.replace(RegExp(item.name, 'gi'), '<strong>$&</strong>') + '"</p>';
                     card += '            <p class="card-text"><small class="text-muted">Sentiment: <span class="' + (item.sentiment > 0 ? "text-success" : "text-danger") + '">' + item.sentimentString + '</span></small></p>';
                 }
                 card += '    </div>';
@@ -201,9 +201,16 @@
         data.addColumn('number', 'Instances');
 
         var values = [];
+        var color = [];
 
         for (var key in sentiments) {
             if (sentiments.hasOwnProperty(key)) {
+
+                if (key.indexOf("Positive") > -1) color.push("#28a745")
+                else if (key.indexOf("Negative") > -1) color.push("#dc3545")
+                else if (key.indexOf("Nuetral") > -1) color.push("#6c757d")
+                else if (key.indexOf("Mixed") > -1) color.push("#ffc107")
+
                 values.push([key, sentiments[key]]);
             }
         }
@@ -213,7 +220,12 @@
         // Set chart options
         var options = {
             'width': 300,
-            'height': 200
+            'height': 200,
+            'pieHole': 0.3,
+            'colors': color,
+            backgroundColor: 'transparent',
+            pieSliceTextStyle: { color: '#000000' },
+            chartArea: { width: '90%', height: '100%' }
         };
 
         // Instantiate and draw our chart, passing in some options.
