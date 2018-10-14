@@ -18,11 +18,12 @@ namespace EME.Objects
 
             foreach(NameFormat nf in (NameFormat[])Enum.GetValues(typeof(NameFormat)))
             {
-                names.Add(new Name()
-                {
-                    Value = NameManager.FormatName(this, nf),
-                    Confidence = ConfidenceManager.GetNameConfidence(nf)
-                });
+                if (names.Where(n => n.Value == NameManager.FormatName(this, nf)).Count() == 0)
+                    names.Add(new Name()
+                    {
+                        Value = NameManager.FormatName(this, nf),
+                        Confidence = ConfidenceManager.GetNameConfidence(nf)
+                    });
             }
 
             return names;

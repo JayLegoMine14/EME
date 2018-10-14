@@ -19,7 +19,6 @@ namespace EME.Services
                 },
                 Confidence = .8,
                 ImageUrl = "https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
-                Sentiment = .8
             };
         }
 

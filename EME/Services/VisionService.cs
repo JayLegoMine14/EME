@@ -92,7 +92,10 @@ namespace EME.Services
 
             StringContent content = new StringContent(json, Encoding.UTF8, "application/json");        
             response = await client.PostAsync(uri, content);
+            if (response.StatusCode.ToString() == "429") return 0;
             var jsonString = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(jsonString);
+            if (jsonString == "[]") return 0.0;
             JArray jot = JArray.Parse(jsonString);
             if (jot.Count == 0) return 0.0;
             JToken jo = jot[0];
@@ -107,8 +110,8 @@ namespace EME.Services
             response = await client.PostAsync(uri3, content3);
             var jsonString3 = await response.Content.ReadAsStringAsync();
             JObject jo3 = JObject.Parse(jsonString3);
+            if (jo3["confidence"] == null) return 0;
 
-            bool isidentical = Boolean.Parse(jo3["isIdentical"].ToString());
             return Double.Parse(jo3["confidence"].ToString());
         }
     }

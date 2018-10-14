@@ -24,7 +24,6 @@ for n in args.name:
 urls = args.urls
 
 for url in urls:
-    # try:
     with urllib.request.urlopen(url) as fp:
         soup = BeautifulSoup(fp, 'lxml')
         
@@ -33,15 +32,9 @@ for url in urls:
         print(soup.title.string.strip() + ',')
 
         for image in soup.find_all('img'):
-            # if (image['src'][1] and image['src'][1] == '/'):
-            #     print("http:" + image['src'])
-            # else:
-            #     print(url + image['src'])
             print(urljoin(url, image['src']))
         print(',')
         for p in soup.find_all('p'):
             if (p.get_text()):
                 print(p.get_text())
-    # except Error:
-    #     pass
 print('|')

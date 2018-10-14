@@ -45,25 +45,37 @@ namespace EME.Services
                     {
                         foreach (string imageUrl in group[IMAGE_URLS_INDEX].Split("\r\n"))
                         {
-                            images.Add(new Image
+                            if (!string.IsNullOrEmpty(imageUrl)
+                                && !string.IsNullOrWhiteSpace(imageUrl)
+                                && (imageUrl.EndsWith(".jpeg")
+                                || imageUrl.EndsWith(".jpg")))
                             {
-                                Webpage = new Webpage { Url = group[URL_INDEX], Title = group[TITLE_INDEX] },
-                                ImageUrl = imageUrl
-                            });
-                        }
-
-                        if (group.Length > PARAGRAPHS_INDEX)
-                        {
-                            foreach (string paragraph in group[PARAGRAPHS_INDEX].Split("\r\n"))
-                            {
-                                paragraphs.Add(new Paragraph
+                                images.Add(new Image
                                 {
-                                    Webpage = new Webpage { Title = group[TITLE_INDEX], Url = group[URL_INDEX] },
-                                    Text = paragraph,
-                                    Name = group[NAME_INDEX]
+                                    Webpage = new Webpage { Url = group[URL_INDEX], Title = group[TITLE_INDEX] },
+                                    ImageUrl = imageUrl,
+                                    Confidence = name.Confidence
                                 });
                             }
                         }
+                    }
+                }
+
+                foreach (string url in scrapeCriteria.GetValueOrDefault(name))
+                {
+                    var data = WebScraper.GetText(url, name.Value);
+                    List<string> pars = data[1] as List<string>;
+                    string title = data[0] as string;
+
+                    foreach (string par in pars)
+                    {
+                        paragraphs.Add(new Paragraph
+                        {
+                            Webpage = new Webpage { Title = title, Url = url },
+                            Text = par,
+                            Name = name.Value,
+                            Confidence = name.Confidence
+                        });
                     }
                 }
             }

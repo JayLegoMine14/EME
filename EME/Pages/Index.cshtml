@@ -43,8 +43,19 @@
             </h4>
         </div>
         <div class="carousel-item eme-red p-3 pb-5" style="overflow-y: auto">
-            
             <div id="Results" class="card-columns" style="padding-bottom: 50px">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <button id="Back" type="button" class="btn btn-block btn-secondary"><i class="fas fa-arrow-left"></i> New Search</button>
+                            </div>
+                            <div class="col-5">
+                                <button id="Save" type="button" class="btn btn-block btn-dark"><i class="fas fa-save"></i> Save Results</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -71,6 +82,14 @@
     var imageUpload;
     var sentiments = [];
 
+    $("#Back").click(function () {
+        location.reload();
+    });
+
+    $("#Save").click(function () {
+        window.print();
+    });
+
     Dropzone.autoDiscover = false;
     imageUpload = new Dropzone("div#Photos", {
         paramName: "file",
@@ -79,6 +98,7 @@
         acceptedFiles: "image/*",
         withCredentials: true,
         autoProcessQueue: false,
+        timeout: 240000,
         parallelUploads: 5,
         maxFiles: 5,
         uploadMultiple: true,
@@ -95,7 +115,35 @@
                 })
             }
         },
+        error: function () {
+            $("#MasterCarousel").carousel('prev');
+            $.alert({
+                title: 'Unknown Error',
+                content: 'There was an unkown error executing the search. Please try again.',
+                type: 'red',
+                columnClass: "col-sm-6"
+            });
+        },
+        canceled: function () {
+            $("#MasterCarousel").carousel('prev');
+            $.alert({
+                title: 'Unexpected Cancellation',
+                content: 'The search was unexpectedy cancelled. Please try again.',
+                type: 'red',
+                columnClass: "col-sm-6"
+            });
+        },
         success: function (file, response) {
+            if (response == null || response == "") {
+                $("#MasterCarousel").carousel('prev');
+                $.alert({
+                    title: 'Unknown Error',
+                    content: 'There was an unkown error executing the search. Please try again.',
+                    type: 'red',
+                    columnClass: "col-sm-6"
+                });
+                return;
+            }
             var r = response;
 
             var total = 50;
@@ -152,16 +200,18 @@
                 if (item["imageUrl"] != null)
                     card += '        <img class="card-img-top" src="' + item.imageUrl + '">';
                 card += '    <div class="card-body">';
-                card += '            <h6 class="card-title">Content from: <a href="' + item.webpage.url + '">' + item.webpage.title + '</a></h6>';
+                card += '            <h6 class="card-title" style="width: 90%;">Content from: <a href="' + item.webpage.url + '">' + item.webpage.title + '</a></h6>';
                 if (item["text"] != null) {
                     card += '            <p class="card-text">"' + item.text.replace(RegExp(item.name, 'gi'), '<strong>$&</strong>') + '"</p>';
                     card += '            <p class="card-text"><small class="text-muted">Sentiment: <span class="' + (item.sentiment > 0 ? "text-success" : "text-danger") + '">' + item.sentimentString + '</span></small></p>';
                 }
                 card += '            <p class="card-text"><small class="text-muted"><strong>Confidence:</strong><span class="text-success">' + confidenceRep + '</span></small></p>'
                 card += '    </div>';
-                card += '    <div class="card-img-overlay" style="pointer-events: none;">';
-                card += '       <span class="float-right"><i class="fas fa-lg fa-arrow-' + (item.sentiment > 0 ? "up text-success" : "down text-danger") + '"></i></span>';
-                card += '   </div>';
+                if (item["text"] != null) {
+                    card += '    <div class="card-img-overlay" style="pointer-events: none;">';
+                    card += '       <span class="float-right"><i class="fas fa-lg fa-arrow-' + (item.sentiment > 0 ? "up text-success" : (item.sentimentString == "Neutral" ? "right text-swarning" : "down text-danger")) + '"></i></span>';
+                    card += '   </div>';
+                }
                 card += '</div>';
 
                 $("#Results").append(card);

@@ -32,11 +32,18 @@ namespace EME.Services
 
         public static List<String> GetURLs(string searchTerm)
         {
-            string JSONString = GetJSON(searchTerm);
-            JObject jObject = JObject.Parse(JSONString);
-            JToken jUser = jObject["webPages"];
-            JToken[] sites = jUser["value"].ToArray();
-            return sites.Select(s => s["url"].ToString()).ToList();
+            try
+            {
+                string JSONString = GetJSON(searchTerm);
+                JObject jObject = JObject.Parse(JSONString);
+                JToken jUser = jObject["webPages"];
+                JToken[] sites = jUser["value"].ToArray();
+                return sites.Select(s => s["url"].ToString()).ToList();
+            }
+            catch
+            {
+                return new List<string>();
+            }
         }
 
         public static string GetJSON(string searchTerm)
@@ -47,7 +54,7 @@ namespace EME.Services
         static SearchResult BingWebSearch(string searchQuery)
         {
             // Construct the URI of the search request
-            var uriQuery = uriBase + "?q=" + Uri.EscapeDataString(searchQuery) + "&count=50";
+            var uriQuery = uriBase + "?q=" + Uri.EscapeDataString(searchQuery) + "&count=10";
 
             // Perform the Web request and get the response
             WebRequest request = HttpWebRequest.Create(uriQuery);

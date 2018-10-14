@@ -12,16 +12,6 @@ namespace EME.Services
         {
             Dictionary<Name, List<string>> urls = BingService.Search(user.GetNames());
 
-            List<Image> testImages = new List<Image>();
-            testImages.Add(TestService.GetTestImage());
-            testImages.Add(TestService.GetTestImage());
-            testImages.Add(TestService.GetTestImage());
-
-            List<Paragraph> testPars = new List<Paragraph>();
-            testPars.Add(TestService.GetTestParagraph());
-            testPars.Add(TestService.GetTestParagraph());
-            testPars.Add(TestService.GetTestParagraph());
-
             object[] scrapeResult = ScrapeService.Scrape(urls);
 
             scrapeResult[1] = NaturalLanguageAnalysis.analyzeSentiment(scrapeResult[1] as List<Paragraph>);

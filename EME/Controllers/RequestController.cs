@@ -16,31 +16,38 @@ namespace EME.Controllers
         [HttpPost]
         public object[] Upload()
         {
-            var files = HttpContext.Request.Form.Files;
-            List<String> paths = new List<String>();
-            foreach (var file in files)
+            try
             {
-                if (file.Length > 0)
+                var files = HttpContext.Request.Form.Files;
+                List<String> paths = new List<String>();
+                foreach (var file in files)
                 {
-                    var filePath = Path.Combine("Images", "img" + DateTime.Now.Ticks + ".png");
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    if (file.Length > 0)
                     {
-                        file.CopyTo(fileStream);
-                        paths.Add(filePath);
+                        var filePath = Path.Combine("Images", "img" + DateTime.Now.Ticks + ".png");
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            file.CopyTo(fileStream);
+                            paths.Add(filePath);
+                        }
                     }
                 }
+
+                User u = new User();
+
+                JObject name = JObject.Parse(HttpContext.Request.Form["name"]);
+                u.FirstName = name["first"].ToString();
+                u.MiddleName = name["middle"].ToString();
+                u.LastName = name["last"].ToString();
+
+                u.ImagePaths = paths;
+
+                return SearchService.PreformSearch(u);
             }
-
-            User u = new User();
-
-            JObject name = JObject.Parse(HttpContext.Request.Form["name"]);
-            u.FirstName = name["first"].ToString();
-            u.MiddleName = name["middle"].ToString();
-            u.LastName = name["last"].ToString();
-
-            u.ImagePaths = paths;
-
-            return SearchService.PreformSearch(u);
+            catch(Exception e)
+            {
+                return null;
+            }
         }
     }
 }

@@ -20,3 +20,5 @@ C:\Users\Dakota.DESKTOP-R1IRH6L\Documents\GitHub\EME\EME\obj\Debug\netcoreapp2.0
 C:\Users\Dakota.DESKTOP-R1IRH6L\Documents\GitHub\EME\EME\obj\Debug\netcoreapp2.0\EME.AssemblyInfo.cs
 C:\Users\Dakota.DESKTOP-R1IRH6L\Documents\GitHub\EME\EME\obj\Debug\netcoreapp2.0\EME.dll
 C:\Users\Dakota.DESKTOP-R1IRH6L\Documents\GitHub\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
+C:\Users\Dakota.DESKTOP-R1IRH6L\Documents\GitHub\EME\EME\obj\Debug\netcoreapp2.0\EME.Resource.resources
+C:\Users\Dakota.DESKTOP-R1IRH6L\Documents\GitHub\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.GenerateResource.cache

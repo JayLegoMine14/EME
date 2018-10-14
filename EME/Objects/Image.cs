@@ -10,6 +10,5 @@ namespace EME.Objects
         public Webpage Webpage { get; set; }
         public double Confidence { get; set; }
         public string ImageUrl { get; set; }
-        public double Sentiment { get; set; }
     }
 }
