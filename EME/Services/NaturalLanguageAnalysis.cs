@@ -61,7 +61,7 @@ namespace EME.Services
                 Google.Cloud.Language.V1.Sentiment sentiment = getSentiment(p.Text);
                 p.Sentiment = sentiment.Score;
                 p.Magnitude = sentiment.Magnitude;
-                p.sentimentString = sentimentToString(sentiment);
+                p.SentimentString = sentimentToString(sentiment);
             }
             return paragraphs;
         }

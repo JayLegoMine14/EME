@@ -7,6 +7,7 @@ namespace EME.Objects
 {
     public class Webpage
     {
+        public Webpage() { }
         public Webpage(string pUrl, string pTitle)
         {
             Url = pUrl;

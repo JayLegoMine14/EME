@@ -24,8 +24,11 @@ namespace EME.Services
 
             object[] scrapeResult = new object[] { testImages, testPars };
 
-            scrapeResult[0] = (scrapeResult[0] as List<Image>).OrderByDescending(i => i.Confidence);
-            scrapeResult[1] = (scrapeResult[1] as List<Paragraph>).OrderByDescending(i => i.Confidence);
+            scrapeResult[1] = NaturalLanguageAnalysis.analyzeSentiment(scrapeResult[1] as List<Paragraph>);
+            VisionService.AnalyseImages(user, (scrapeResult[0] as List<Image>), (scrapeResult[1] as List<Paragraph>));
+
+            scrapeResult[0] = (scrapeResult[0] as List<Image>).OrderByDescending(i => i.Confidence).Take(20).ToList();
+            scrapeResult[1] = (scrapeResult[1] as List<Paragraph>).OrderByDescending(i => i.Confidence).Take(40).ToList();
 
             return scrapeResult;
         }

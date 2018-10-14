@@ -23,3 +23,5 @@ C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.pdb
 C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.Resource.resources
 C:\Users\truss_000\Desktop\workspace\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.GenerateResource.cache
 C:\Users\truss_000\Desktop\workspace\EME\EME\bin\Debug\netcoreapp2.0\EME.dll.config
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.Resource.resources
+C:\Users\James Allison\source\repos\EME\EME\obj\Debug\netcoreapp2.0\EME.csproj.GenerateResource.cache
