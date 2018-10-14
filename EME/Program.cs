@@ -16,6 +16,7 @@ namespace EME
         public static void Main(string[] args)
         {
             //List<string> urls = BingService.GetURLs("Thomas Aquines");
+            VisionService.MakeRequest();
             BuildWebHost(args).Run();
         }
 
