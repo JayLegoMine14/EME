@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Google.Cloud.Language.V1;
 using Google.Apis.Auth.OAuth2;
 using Grpc.Auth;
+using EME.Objects;
 
 namespace EME.Services
 {
@@ -37,16 +38,16 @@ namespace EME.Services
             var score = sentiment.Score;
             var magnitude = sentiment.Magnitude;
 
-            if ((score >= 0.8) && (magnitude >= 3.0))
+            if ((score > 0.3))
             {
                 sentimentString = "Clearly Positive";
-            } else if ((score <= -0.6) && (magnitude >= 4.0))
+            } else if ((score < -0.3))
             {
                 sentimentString = "Clearly Negative";
-            } else if ((score >= -.1) && (score <= .1) && (magnitude >= 3.0) && (magnitude <= 4.0))
+            } else if ((score >= -.3) && (score <= .3))
             {
                 sentimentString = "Neutral";
-            } else if ((score >= .1) && (score <= .5) && (magnitude >= 0) && (magnitude <= 2.0))
+            } else if ((score >= -.3) && (score <= .3))
             {
                 sentimentString = "Mixed";
             }
@@ -54,5 +55,15 @@ namespace EME.Services
             return sentimentString;
         }
 
+        public static List<Paragraph> analyzeSentiment(List<Paragraph> paragraphs)
+        {
+            foreach (Paragraph p in paragraphs) {
+                Google.Cloud.Language.V1.Sentiment sentiment = getSentiment(p.Text);
+                p.Sentiment = sentiment.Score;
+                p.Magnitude = sentiment.Magnitude;
+                p.sentimentString = sentimentToString(sentiment);
+            }
+            return paragraphs;
+        }
     }
 }
