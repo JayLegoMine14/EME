@@ -33,7 +33,7 @@ namespace EME.Services
                     Title = "Google"
                 },
                 Confidence = .8,
-                Text = "Hey, James Allison is an awesome person.",
+                Text = "Hey, James Allison is a person.",
                 Name = "James Allison",
                 Sentiment = .8,
                 Magnitude = .6,

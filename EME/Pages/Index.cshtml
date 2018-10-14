@@ -17,7 +17,7 @@
                             <input type="text" id="FirstName" class="form-control" placeholder="First name">
                         </div>
                         <div class="col">
-                            <input type="text" id="MiddleName" class="form-control" placeholder="Middle names">
+                            <input type="text" id="MiddleName" class="form-control" placeholder="Middle name (optional)">
                         </div>
                         <div class="col">
                             <input type="text" id="LastName" class="form-control" placeholder="Last name">
@@ -37,8 +37,9 @@
             <h4 class="position-absolute text-center absolute-center eme-white-text" style="width:100%;top:55%;">
                 <span id="content-1">Scouring the wide web...</span>
                 <span id="content-2">Finding interesting stuff...</span>
-                <span id="content-3">Incentivising the coder monkies...</span>
-                <span id="content-4">Hmmm...</span>
+                <span id="content-3">Incentivising the coder monkeys...</span>
+                <span id="content-4">Ohhh, look at that...</span>
+                <span id="content-5">Hmmm...</span>
             </h4>
         </div>
         <div class="carousel-item eme-red p-3 pb-5" style="overflow-y: auto">
@@ -111,9 +112,9 @@
                 if (pars.length > 0) {
                     var end = Math.floor(Math.random() * 2);
                     for (var i = 0; i <= end && pars.length > 0; i++) {
-                        if (currentColumn == 1) col1.push(pars.pop());
-                        if (currentColumn == 2) col2.push(pars.pop());
-                        if (currentColumn == 3) col3.push(pars.pop());
+                        if (currentColumn == 1) col1.push(pars.shift());
+                        if (currentColumn == 2) col2.push(pars.shift());
+                        if (currentColumn == 3) col3.push(pars.shift());
                         currentColumn++;
                         if (currentColumn == 4) currentColumn = 1;
                     }
@@ -121,9 +122,9 @@
                 if (images.length > 0) {
                     var end = Math.floor(Math.random() * 2);
                     for (var i = 0; i <= end && images.length > 0; i++) {
-                        if (currentColumn == 1) col1.push(images.pop());
-                        if (currentColumn == 2) col2.push(images.pop());
-                        if (currentColumn == 3) col3.push(images.pop());
+                        if (currentColumn == 1) col1.push(images.shift());
+                        if (currentColumn == 2) col2.push(images.shift());
+                        if (currentColumn == 3) col3.push(images.shift());
                         currentColumn++;
                         if (currentColumn == 4) currentColumn = 1;
                     }
@@ -144,6 +145,9 @@
                     }
                 }
 
+                var confidenceRep = "";
+                for (var i = 0; i < (Math.floor(item.confidence * 2) + 2) && i < 5; i++) confidenceRep += " &bull;"; 
+
                 card += '<div class="card" data-aos-anchor-placement="top-bottom">';
                 if (item["imageUrl"] != null)
                     card += '        <img class="card-img-top" src="' + item.imageUrl + '">';
@@ -153,6 +157,7 @@
                     card += '            <p class="card-text">"' + item.text.replace(RegExp(item.name, 'gi'), '<strong>$&</strong>') + '"</p>';
                     card += '            <p class="card-text"><small class="text-muted">Sentiment: <span class="' + (item.sentiment > 0 ? "text-success" : "text-danger") + '">' + item.sentimentString + '</span></small></p>';
                 }
+                card += '            <p class="card-text"><small class="text-muted"><strong>Confidence:</strong><span class="text-success">' + confidenceRep + '</span></small></p>'
                 card += '    </div>';
                 card += '    <div class="card-img-overlay" style="pointer-events: none;">';
                 card += '       <span class="float-right"><i class="fas fa-lg fa-arrow-' + (item.sentiment > 0 ? "up text-success" : "down text-danger") + '"></i></span>';
@@ -179,9 +184,40 @@
     })();
 
     $("#FindMe").click(function () {
-        $("#MasterCarousel").carousel('next');
-        imageUpload.processQueue();
+        if (validate()) {
+            $("#MasterCarousel").carousel('next');
+            imageUpload.processQueue();
+        }
     });
+
+    function validate() {
+        var hasError = false;
+
+        $("#FirstName").removeClass("is-invalid");
+        $("#LastName").removeClass("is-invalid");
+
+        if ($("#FirstName").val().length == 0) {
+            $("#FirstName").addClass("is-invalid");
+            hasError = true;
+        }
+
+        if ($("#LastName").val().length == 0) {
+            $("#LastName").addClass("is-invalid");
+            hasError = true;
+        }
+
+        if (imageUpload.files.length == 0) {
+            $.alert({
+                title: 'One Image Required',
+                content: 'Please upload at least one image.',
+                type: 'red',
+                columnClass: "col-sm-6"
+            });
+            hasError = true;
+        }
+
+        return !hasError;
+    }
 </script>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -208,7 +244,7 @@
 
                 if (key.indexOf("Positive") > -1) color.push("#28a745")
                 else if (key.indexOf("Negative") > -1) color.push("#dc3545")
-                else if (key.indexOf("Nuetral") > -1) color.push("#6c757d")
+                else if (key.indexOf("Neutral") > -1) color.push("#6c757d")
                 else if (key.indexOf("Mixed") > -1) color.push("#ffc107")
 
                 values.push([key, sentiments[key]]);

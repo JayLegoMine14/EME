@@ -36,15 +36,13 @@ namespace EME.Services
                 if (confidenceBoost > .6)
                     i.Confidence += confidenceBoost;
                 else
-                    i.Confidence -= confidenceBoost;
+                    i.Confidence -= (1 - confidenceBoost);
 
                 List<Paragraph> matchingPars = pars.Where(p => p.Webpage.Title == i.Webpage.Title).ToList();
                 foreach(Paragraph p in matchingPars)
                 {
                     if (confidenceBoost > .6)
-                        i.Confidence += confidenceBoost;
-                    else
-                        i.Confidence -= confidenceBoost;
+                        p.Confidence += (confidenceBoost / 2);
                 }
             }
         }

@@ -7,6 +7,7 @@ namespace EME.Objects
 {
     public class Paragraph
     {
+        public Paragraph() { }
         public Paragraph(Webpage pWebpage, double pConfidence, string pText, string pName)
         {
             Webpage = pWebpage;
@@ -20,6 +21,6 @@ namespace EME.Objects
         public string Name {get; set;}
         public double Sentiment { get; set; }
         public double Magnitude { get; set; }
-        public string sentimentString { get; set; }
+        public string SentimentString { get; set; }
     }
 }
