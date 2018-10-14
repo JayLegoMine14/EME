@@ -44,10 +44,12 @@ namespace EME.Services
             } else if ((score < -0.3))
             {
                 sentimentString = "Clearly Negative";
-            } else if ((score >= -.3) && (score <= .3))
+            }
+            else if ((score >= -.3) && (score <= .3) && (magnitude < 1))
             {
                 sentimentString = "Neutral";
-            } else if ((score >= -.3) && (score <= .3))
+            }
+            else if ((score >= -.3) && (score <= .3) && (magnitude >= 1))
             {
                 sentimentString = "Mixed";
             }
