@@ -22,7 +22,7 @@ namespace EME.Services
             testPars.Add(TestService.GetTestParagraph());
             testPars.Add(TestService.GetTestParagraph());
 
-            object[] scrapeResult = new object[] { testImages, testPars };
+            object[] scrapeResult = ScrapeService.Scrape(urls);
 
             scrapeResult[0] = (scrapeResult[0] as List<Image>).OrderByDescending(i => i.Confidence);
             scrapeResult[1] = (scrapeResult[1] as List<Paragraph>).OrderByDescending(i => i.Confidence);
