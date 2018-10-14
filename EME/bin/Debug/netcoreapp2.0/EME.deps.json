@@ -24,6 +24,11 @@
     ".NETCoreApp,Version=v2.0": {
       "EME/1.0.0": {
         "dependencies": {
+          "AWSSDK.Core": "3.3.27.2",
+          "AWSSDK.Extensions.NETCore.Setup": "3.3.6",
+          "AWSSDK.Rekognition": "3.3.11.4",
+          "AWSSDK.S3": "3.3.25",
+          "Google.Cloud.Language.V1": "1.2.0-beta01",
           "Microsoft.AspNetCore.All": "2.0.6",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3"
@@ -33,6 +38,265 @@
         },
         "compile": {
           "EME.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.27.2": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.27.2"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.6": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.27.2",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.6.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.Rekognition/3.3.11.4": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.27.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Rekognition.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.11.4"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Rekognition.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.25": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.27.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.25.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        }
+      },
+      "Google.Api.CommonProtos/1.3.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.5.1",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Google.Api.CommonProtos.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Google.Api.CommonProtos.dll": {}
+        }
+      },
+      "Google.Api.Gax/2.5.0": {
+        "dependencies": {
+          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.2",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Google.Api.Gax.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Google.Api.Gax.dll": {}
+        }
+      },
+      "Google.Api.Gax.Grpc/2.5.0": {
+        "dependencies": {
+          "Google.Api.CommonProtos": "1.3.0",
+          "Google.Api.Gax": "2.5.0",
+          "Google.Apis.Auth": "1.35.1",
+          "Grpc.Auth": "1.13.1",
+          "Grpc.Core": "1.13.1",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Google.Api.Gax.Grpc.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.5/Google.Api.Gax.Grpc.dll": {}
+        }
+      },
+      "Google.Apis/1.35.1": {
+        "dependencies": {
+          "Google.Apis.Core": "1.35.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.35.1.0",
+            "fileVersion": "1.35.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.35.1": {
+        "dependencies": {
+          "Google.Apis": "1.35.1",
+          "Google.Apis.Core": "1.35.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.35.1.0",
+            "fileVersion": "1.35.1.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.35.1.0",
+            "fileVersion": "1.35.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.35.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.35.1.0",
+            "fileVersion": "1.35.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
+      "Google.Cloud.Language.V1/1.2.0-beta01": {
+        "dependencies": {
+          "Google.Api.Gax.Grpc": "2.5.0",
+          "Grpc.Core": "1.13.1",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Google.Cloud.Language.V1.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.5/Google.Cloud.Language.V1.dll": {}
+        }
+      },
+      "Google.Protobuf/3.5.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.5.1.0",
+            "fileVersion": "3.5.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc.Auth/1.13.1": {
+        "dependencies": {
+          "Google.Apis.Auth": "1.35.1",
+          "Grpc.Core": "1.13.1",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Grpc.Auth.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.13.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.5/Grpc.Auth.dll": {}
+        }
+      },
+      "Grpc.Core/1.13.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Interactive.Async": "3.1.1",
+          "System.Runtime.Loader": "4.0.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/Grpc.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.13.1.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/native/libgrpc_csharp_ext.x64.so": {
+            "rid": "linux",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux/native/libgrpc_csharp_ext.x86.so": {
+            "rid": "linux",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libgrpc_csharp_ext.x64.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libgrpc_csharp_ext.x86.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/native/grpc_csharp_ext.x64.dll": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/native/grpc_csharp_ext.x86.dll": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.5/Grpc.Core.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -471,7 +735,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.0.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.0.3",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {
@@ -931,7 +1195,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
@@ -1243,7 +1507,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.2",
           "Microsoft.Extensions.Logging.Console": "2.0.1",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {
@@ -1617,7 +1881,7 @@
           "Microsoft.Rest.ClientRuntime": "2.3.8",
           "Microsoft.Rest.ClientRuntime.Azure": "3.3.7",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.2",
           "System.Net.Http": "4.3.0"
         },
         "runtime": {
@@ -1634,7 +1898,7 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.2",
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
           "System.Linq": "4.3.0",
@@ -2184,7 +2448,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.0.1",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {
@@ -2254,7 +2518,7 @@
       "Microsoft.Extensions.DependencyModel/2.0.3": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.0.3",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.2",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -2516,7 +2780,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.0.1",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {
@@ -2703,7 +2967,7 @@
       "Microsoft.IdentityModel.Tokens/5.1.4": {
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "1.1.4",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.2",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -2746,7 +3010,7 @@
       "Microsoft.Rest.ClientRuntime/2.3.8": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {
@@ -2762,7 +3026,7 @@
         "dependencies": {
           "Microsoft.Rest.ClientRuntime": "2.3.8",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {
@@ -2938,33 +3202,13 @@
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Newtonsoft.Json/10.0.1": {
+      "Newtonsoft.Json/10.0.2": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
-          "System.Collections": "4.3.0",
+          "NETStandard.Library": "2.0.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Numerics": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
         },
         "runtime": {
@@ -2980,7 +3224,7 @@
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.2"
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
@@ -3890,6 +4134,33 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
+      "System.Net.Requests/4.0.11": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.WebHeaderCollection": "4.0.1",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
       "System.Net.Security/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -3940,6 +4211,14 @@
           "System.Net.Primitives": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Net.WebHeaderCollection/4.0.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0"
         }
       },
       "System.Numerics.Vectors/4.4.0": {},
@@ -4104,6 +4383,13 @@
             "rid": "win",
             "assetType": "runtime"
           }
+        }
+      },
+      "System.Runtime.Loader/4.0.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
         }
       },
       "System.Runtime.Numerics/4.3.0": {
@@ -4618,7 +4904,7 @@
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.2",
           "System.Spatial": "5.8.2"
         },
         "runtime": {
@@ -4814,6 +5100,104 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.3.27.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P2fH/EbebFBDq89WWl2XLZX+Voq/7rLluTgkKsWFsgW0GcB5GoLQmaCjVM5I1MbhhTjDrJAzUcSPIDLoGAaRew==",
+      "path": "awssdk.core/3.3.27.2",
+      "hashPath": "awssdk.core.3.3.27.2.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vGAUQtMHYUzSN4PuKHdBrgw79AXt8Fw7jSsRjZiSit/5VwJV6x4o4ZNcVNDrtUOE76rE695hMCIzr0pONS3FuQ==",
+      "path": "awssdk.extensions.netcore.setup/3.3.6",
+      "hashPath": "awssdk.extensions.netcore.setup.3.3.6.nupkg.sha512"
+    },
+    "AWSSDK.Rekognition/3.3.11.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+Aw1Xw3h3r/cUv2SHW5r3EeHHDeGoJNiEhQxEfUKdpsxWGMTCUHytSl0ce1NzEortkVS77c2LKwqUCwkQAngwQ==",
+      "path": "awssdk.rekognition/3.3.11.4",
+      "hashPath": "awssdk.rekognition.3.3.11.4.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.3.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w6OuGDIKO1jXhOw4+GG0yzrveedm+9hje66519aHtbw/4Dpd5w3odv/pK+RcQUsQjZNGZTU2vgdqVvSFqzc+YA==",
+      "path": "awssdk.s3/3.3.25",
+      "hashPath": "awssdk.s3.3.3.25.nupkg.sha512"
+    },
+    "Google.Api.CommonProtos/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U7mYn9v8CjBWiUOFfd0hMXQB2i4yO7M2/7QAFlvLQ2mHYftqdGXe9pN7EkiPBrIjRkbEJaano0PhKWjr2pvAXQ==",
+      "path": "google.api.commonprotos/1.3.0",
+      "hashPath": "google.api.commonprotos.1.3.0.nupkg.sha512"
+    },
+    "Google.Api.Gax/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a4m7UtIGRkFCJ6Uw8XxviIFvZfCqbwLauGOrbRuf1WxmLtcTr+GeG2gpQhnkyEKjqnUiqQCHhCDDGFDgEqsJlw==",
+      "path": "google.api.gax/2.5.0",
+      "hashPath": "google.api.gax.2.5.0.nupkg.sha512"
+    },
+    "Google.Api.Gax.Grpc/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ui0m6lbBUK/jBbMvIaa6rFsL3GCLgZ8yDF49nzffTxsL8kWZhojq6xu0AyUtvhJD0QnV23qfGOWSJHaM8L/w9Q==",
+      "path": "google.api.gax.grpc/2.5.0",
+      "hashPath": "google.api.gax.grpc.2.5.0.nupkg.sha512"
+    },
+    "Google.Apis/1.35.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZBWKDuj7qznEaNYHFRYcwbDfdDltqfeUrpVL8ijahy7KGG8DdHBY86uA2bpiKTAmgbOO7TKNkvaURAVJur98eQ==",
+      "path": "google.apis/1.35.1",
+      "hashPath": "google.apis.1.35.1.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.35.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GklaB+R3yiC13T/duEW10uqvugSr1zgPcn1P3O4hOPcMoS4Z/NvGYns2IoEywVKXuFg4kGH/VUCZ7xSUdcAV6g==",
+      "path": "google.apis.auth/1.35.1",
+      "hashPath": "google.apis.auth.1.35.1.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.35.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xVzrkplgHMOCqFQHIfy9HvJBKNLQaRV+orWFHjpUAtGZe0GghHdQKG5dzLNnYjLQXICBftlK5FWk9AoAotYbYw==",
+      "path": "google.apis.core/1.35.1",
+      "hashPath": "google.apis.core.1.35.1.nupkg.sha512"
+    },
+    "Google.Cloud.Language.V1/1.2.0-beta01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xwDoXVomgkzB6RhDiSDMXED7RwXlOFobDuRXJVhEa00aEruLFZ7z1ENS0csKbYb0LuVynqFfzPLE+RJBTSDNHA==",
+      "path": "google.cloud.language.v1/1.2.0-beta01",
+      "hashPath": "google.cloud.language.v1.1.2.0-beta01.nupkg.sha512"
+    },
+    "Google.Protobuf/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f2k1VNaB9bfvEsvARzzEL1TZiIpL33KKK3JMH7UANlPlJVptuvsk4qpBZEnz0pORWZOdUHlVwMQuUzFqjJYCxA==",
+      "path": "google.protobuf/3.5.1",
+      "hashPath": "google.protobuf.3.5.1.nupkg.sha512"
+    },
+    "Grpc.Auth/1.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KwYikByDNQ88v0vP5QXFS/5rYrRmNY5cvavv9vvJIR8tPiMCGaF4H5RZcpfwRp2o0MaW45SrEPWXCqQLl+fv7A==",
+      "path": "grpc.auth/1.13.1",
+      "hashPath": "grpc.auth.1.13.1.nupkg.sha512"
+    },
+    "Grpc.Core/1.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-goMSEfe1s7g6pANKVKRDY/9eT6sn1yMDr60vO67yGu1rBUau3hCo4Wd8WjYMjoRtUsvuAXrsVPsJFQcGhRh58Q==",
+      "path": "grpc.core/1.13.1",
+      "hashPath": "grpc.core.1.13.1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -5133,7 +5517,7 @@
     "Microsoft.AspNetCore.JsonPatch/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-US78cfi7nrPTXeONgcSWbgrUBLs1Aca4kCJTieWXDLg0G0gwmdfPbd6S3c5TdJRQdA69K3UhPAs9r9ZAMjIFAA==",
+      "sha512": "sha512-TTegmLlmfFvCJ/7QRCMWswfmB17DmBS5Z/ahkGW9RihQPvjmW/3FpckVUJSn0D8chbGfM7PUCCXfEYlsKFDF0A==",
       "path": "microsoft.aspnetcore.jsonpatch/2.0.0",
       "hashPath": "microsoft.aspnetcore.jsonpatch.2.0.0.nupkg.sha512"
     },
@@ -5504,14 +5888,14 @@
     "Microsoft.Data.Sqlite/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jJXCZniFDwHGnRYd9WD3vswQCyIXk0/gsne9TLFWIpy6oK4kAcKD1BTncaHQmVg0pp/YmRBKXVIh4yXSHqbsGQ==",
+      "sha512": "sha512-bUVc4fdknlFYUnEgljI13lr23YaOXO9GEw0Oo6ay8cWijUA/3raWVTNHdRIASF14RFcJ0RaWgLyRGxo7w2qF0Q==",
       "path": "microsoft.data.sqlite/2.0.1",
       "hashPath": "microsoft.data.sqlite.2.0.1.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lkUOJRJEXnXAxWKhCSFjYKLhuopw+m6ClML4cF1Rt/Ek8bBUW6hn1xAHCZ9KFqkcNOpBS7rQ6nZBaSXU3mgbOQ==",
+      "sha512": "sha512-Vubn0Y9RVl82mLoL+8gA7lrbuxdA2+cJmFxfwc56bnujLtTbdcZ8Ay1k+1mGpdZ4IjUKP06IBhXaa071owXStA==",
       "path": "microsoft.data.sqlite.core/2.0.1",
       "hashPath": "microsoft.data.sqlite.core.2.0.1.nupkg.sha512"
     },
@@ -5686,14 +6070,14 @@
     "Microsoft.Extensions.DependencyInjection/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
+      "sha512": "sha512-V6xeuEEpIIygDHtOtJ+0X0qkKtVSUS1+kwOC3O4pH0depJf8AfofGo8hanOxoRgooj7WmTtPcgOIjwAteEe28A==",
       "path": "microsoft.extensions.dependencyinjection/2.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+      "sha512": "sha512-P4dK3DZQFsp7fFzkBu9H9jesBj0KB3O9c50n9FeAOIF+A8aQKBRj63luC9gPqvcedNdMfYQoEUe5dLps1sqvuA==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
     },
@@ -5707,42 +6091,42 @@
     "Microsoft.Extensions.DiagnosticAdapter/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-w8nux+yppIAD3ouzLz3CEtUMj03WIQ9FAmuR6IhrCpQDcoMtajlZIkZLbryJE1jdF1wkewLLM2LpXasfu7HzQw==",
+      "sha512": "sha512-7HO5TlPQMqMoIYRZ0gQDkqi97FCZEHsSXzFIWlrHG2faOfZorN6syEmdMq/lHYBAisPfhdz1eGkhuOzmCuZKMw==",
       "path": "microsoft.extensions.diagnosticadapter/2.0.1",
       "hashPath": "microsoft.extensions.diagnosticadapter.2.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Abstractions/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Gzc5yXvwIrKpdti0Ev4jC0inVrGZpI86eLZorMVRqAPXowR8JDRbcHjhmID2EqA4rdhL/IsfD42+4upKpHULDw==",
+      "sha512": "sha512-X3qVOCDZmj1mQnN2SfFUZZ3qfA4OPmD6XxxZpx43g/OKYvf3RI9tvVUsNECVMHEW7PjYfH83wNpqn6fThFAD0g==",
       "path": "microsoft.extensions.fileproviders.abstractions/2.0.1",
       "hashPath": "microsoft.extensions.fileproviders.abstractions.2.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Composite/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bgAUXH3T/Y1R5bCthCiZVzEX4spvNeIHRv6+Jr4BJMxPVSFm/8er7xvywd2NCayv94frKZdDGP3mjAQZenZDxQ==",
+      "sha512": "sha512-XQgLy2EJhQwFtWFEaxidEFH5CG6UpJksUumAZFH1/DySRFyVqoUY6fExCqMNRwFUZMio6tr2eYvQGVYoNTKhGg==",
       "path": "microsoft.extensions.fileproviders.composite/2.0.1",
       "hashPath": "microsoft.extensions.fileproviders.composite.2.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Embedded/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PH1oo04WCbKy42aga6bC4phl1rZfbFsZLuozJN1LGUUZTCnycUAZzCqG6MNRCgRiHg2bPexiQ15708vSwnuBHQ==",
+      "sha512": "sha512-dupuUHdRuZCtSAAacLzhblRz4qHUh4PXI4hDZq7sj0KteHjyJTjcEYmKocxXexr18d2OuuYRqt57NChldouLzQ==",
       "path": "microsoft.extensions.fileproviders.embedded/2.0.1",
       "hashPath": "microsoft.extensions.fileproviders.embedded.2.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.FileProviders.Physical/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-h+6bcXYlGldl7BUhnQKFxL2sMfeg9Gr/AuVexYOCYWmzDsc4iyUoy3NL7i2vkG209wd0ZXf+pZzRDwGPFhmlSw==",
+      "sha512": "sha512-jPqutmmCQ0SQwX6f9VYg4n/Lgah056GgfeIGoY/9G5jQDDe9Kz2q2T3lc75rNyPKG2pej3sTz+dX1uI+l2vSVA==",
       "path": "microsoft.extensions.fileproviders.physical/2.0.1",
       "hashPath": "microsoft.extensions.fileproviders.physical.2.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.FileSystemGlobbing/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q7KsG2kjwo2Ps0WdV7MFh64cQS0UHikV8qv4HQrUfWQyxim5vNmLzAbuduarS9QWbhRHTtUanx+ohyAQdumdnw==",
+      "sha512": "sha512-+Es2DplDfGchyuZ/IgSzLkL8FSsLn9u1lJdrP9GwAP8FyAIIQg6e7xg4BZYLq3DDi+X6+iJrkmSU8ZzOyhZQqQ==",
       "path": "microsoft.extensions.filesystemglobbing/2.0.1",
       "hashPath": "microsoft.extensions.filesystemglobbing.2.0.1.nupkg.sha512"
     },
@@ -5840,7 +6224,7 @@
     "Microsoft.Extensions.ObjectPool/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-drOmgNZCJiNEqFM/TvyqwtogS8wqoWGQCW5KB/CVGKL6VXHw8OOMdaHyspp8HPstP9UDnrnuq+8eaCaAcQg6tA==",
+      "sha512": "sha512-u/vJNHsHilIr3bNOdnzjvlaHFTP4JacRzJLoqu3o5kl8Cxs1HrSLJ1Hv9o3ZXCwVgwkFLRFKF0a5+RDZhNExZQ==",
       "path": "microsoft.extensions.objectpool/2.0.0",
       "hashPath": "microsoft.extensions.objectpool.2.0.0.nupkg.sha512"
     },
@@ -5868,7 +6252,7 @@
     "Microsoft.Extensions.Primitives/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
+      "sha512": "sha512-AMyFwlYdEY4GjjCFGQhUr1/0ZZyYyNjjpCx8Vwfy+Ylxv8pn649uaX5J2L7aknEtQY5+XA+TSfxRSBCgy68yvQ==",
       "path": "microsoft.extensions.primitives/2.0.0",
       "hashPath": "microsoft.extensions.primitives.2.0.0.nupkg.sha512"
     },
@@ -6019,12 +6403,12 @@
       "path": "microsoft.win32.registry/4.4.0",
       "hashPath": "microsoft.win32.registry.4.4.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/10.0.1": {
+    "Newtonsoft.Json/10.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
-      "path": "newtonsoft.json/10.0.1",
-      "hashPath": "newtonsoft.json.10.0.1.nupkg.sha512"
+      "sha512": "sha512-iwElSU2IXmwGvytJsezyDML2ZWDkG2JzTYzlU/BNlmzMdlmRvbnwITsGGY74gwVEpDli1UdOLkMT7/3jxWvXzA==",
+      "path": "newtonsoft.json/10.0.2",
+      "hashPath": "newtonsoft.json.10.0.2.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",
@@ -6393,7 +6777,7 @@
     "System.Diagnostics.DiagnosticSource/4.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-U/KcC19fyLsPN1GLmeU2zQq15MMVcPwMOYPADVo1+WIoJpvMHxrzvl+BLLZwTEZSneGwaPFZ0aWr0nJ7B7LSdA==",
+      "sha512": "sha512-HpRPX7MklDJFmQa62J8YCE6ErlWbxuIYypvaH7H4LVWgbd8s0UcfMs6E6BQns1VfWdgXgS7gjGC24v8agyEvOg==",
       "path": "system.diagnostics.diagnosticsource/4.4.1",
       "hashPath": "system.diagnostics.diagnosticsource.4.4.1.nupkg.sha512"
     },
@@ -6544,6 +6928,13 @@
       "path": "system.net.primitives/4.3.0",
       "hashPath": "system.net.primitives.4.3.0.nupkg.sha512"
     },
+    "System.Net.Requests/4.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vxGt7C0cZixN+VqoSW4Yakc1Y9WknmxauDqzxgpw/FnBdz4kQNN51l4wxdXX5VY1xjqy//+G+4CvJWp1+f+y6Q==",
+      "path": "system.net.requests/4.0.11",
+      "hashPath": "system.net.requests.4.0.11.nupkg.sha512"
+    },
     "System.Net.Security/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -6557,6 +6948,13 @@
       "sha512": "sha512-m6icV6TqQOAdgt5N/9I5KNpjom/5NFtkmGseEH+AK/hny8XrytLH3+b5M8zL/Ycg3fhIocFpUMyl/wpFnVRvdw==",
       "path": "system.net.sockets/4.3.0",
       "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
+    },
+    "System.Net.WebHeaderCollection/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XX2TIAN+wBSAIV51BU2FvvXMdstUa8b0FBSZmDWjZdwUMmggQSifpTOZ5fNH20z9ZCg2fkV1L5SsZnpO2RQDRQ==",
+      "path": "system.net.webheadercollection/4.0.1",
+      "hashPath": "system.net.webheadercollection.4.0.1.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.4.0": {
       "type": "package",
@@ -6684,6 +7082,13 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
       "hashPath": "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512"
     },
+    "System.Runtime.Loader/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4UN78GOVU/mbDFcXkEWtetJT/sJ0yic2gGk1HSlSpWI0TDf421xnrZTDZnwNBapk1GQeYN7U1lTj/aQB1by6ow==",
+      "path": "system.runtime.loader/4.0.0",
+      "hashPath": "system.runtime.loader.4.0.0.nupkg.sha512"
+    },
     "System.Runtime.Numerics/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -6778,7 +7183,7 @@
     "System.Security.Cryptography.Xml/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1Xubvo4i+K+DO6YzVh6vBKmCl5xx/cAoiJEze6VQ+XwVQU25KQC9pPrmniz2EbbJnmoQ5Rm2FFjHsfQAi0Rs+Q==",
+      "sha512": "sha512-u3W6J9Da+k7c8TKKKTE6ddyZxyDbRraOtt2+mfMDyJvuLvV1njx4f5Van3us/65Au9THPDM21jl/6Vvj7sxbJQ==",
       "path": "system.security.cryptography.xml/4.4.0",
       "hashPath": "system.security.cryptography.xml.4.4.0.nupkg.sha512"
     },

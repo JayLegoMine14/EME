@@ -37,7 +37,7 @@ namespace EME.Services
                 Name = "James Allison",
                 Sentiment = .8,
                 Magnitude = .6,
-                SentimentString = "Mostly Positive"
+                SentimentString = "Positive"
             };
         }
     }
